@@ -1,0 +1,102 @@
+/* Base setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Deep background for contrast */
+  color: #ffffff; /* Soft light text for readability */
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.header-container {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #1F1B24; /* Dark slate for header */
+  margin-bottom: 2rem;
+  color: #FFC107; /* Vibrant accent color */
+}
+
+.header-container h1 {
+  color: #FFC107;
+}
+
+.header-container h2 {
+  color: #ffffff;
+}
+
+/* Card container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.card {
+  background: #2C2C2C; /* Dark card background */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  color: #FFC107;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Button styling */
+.button {
+  background-color: #FFC107; /* Accent button color */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #FFA000; /* Darker shade for hover */
+  transform: scale(1.05);
+}
+
+.dropdown, .input {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #FFC107;
+  width: 100%;
+  background-color: #1F1B24;
+  color: #E0E0E0;
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1.5rem 0;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 15px;
+  }
+}
